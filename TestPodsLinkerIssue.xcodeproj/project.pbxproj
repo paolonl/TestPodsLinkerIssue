@@ -49,7 +49,7 @@
 		5263F0371A1CF6BF0095C96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5263F0381A1CF6BF0095C96D /* TestPodsLinkerIssueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPodsLinkerIssueTests.m; sourceTree = "<group>"; };
 		5263F0461A1CF7A90095C96D /* libTestPodsLinkerIssue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestPodsLinkerIssue.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TestPodsLinkerIssueETests.xctest; path = TestPodsLinkerIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPodsLinkerIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858CF514ECC7F0CDDE0429B2 /* Pods-TestPodsLinkerIssueTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPodsLinkerIssueTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPodsLinkerIssueTests/Pods-TestPodsLinkerIssueTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6F4CD44663692566F52F837 /* libPods-TestPodsLinkerIssue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPodsLinkerIssue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41304F594AB47D287BDEF31 /* Pods-TestPodsLinkerIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPodsLinkerIssue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPodsLinkerIssue/Pods-TestPodsLinkerIssue.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				5263F0461A1CF7A90095C96D /* libTestPodsLinkerIssue.a */,
-				5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueETests.xctest */,
+				5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			);
 			name = TestPodsLinkerIssueTests;
 			productName = TestPodsLinkerIssueETests;
-			productReference = 5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueETests.xctest */;
+			productReference = 5263F0501A1CF7A90095C96D /* TestPodsLinkerIssueTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -468,7 +468,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TestPodsLinkerIssueETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -482,7 +481,6 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TestPodsLinkerIssueETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
